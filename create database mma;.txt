@@ -1,0 +1,17 @@
+create database mma;
+use mma;
+select * from sales;
+select distinct (category) from sales;
+select distinct(subcategory) from sales;
+select * from sales where category ='Technology';
+select * from sales where subcategory ='Art';
+select * from sales where quantity>5;
+select * from sales where quantity>5 and category ='Technology';
+select max(sales) from sales;
+select avg(sales) from sales;
+select * from sales where category!='Technology';
+select * from sales where region!='central region';
+select * from sales where quantity between 5 and 7;
+select * from sales order by profit desc;
+select sales from sales order by sales;
+select * from sales where subcategory='Paper'or'Art';
